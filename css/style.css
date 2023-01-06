@@ -14,10 +14,21 @@ body {
 }
 
 main {
-	max-width: 1140px;
+	width: 1140px;
 	margin-inline: auto;
 }
 
+footer {
+	background-color: #151414;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	padding: 100px 0;
+	height: 550px;
+	display: flex;
+	align-items: center;
+}
 
 /*** Common Design ***/
 
@@ -61,11 +72,12 @@ button.button {
 
 
 /*** Banner Styles ***/
-/* Banner Image Section */
-.banner_image {
+/* Banner */
+.banner {
   background-image: url(../images/banner/banner1.png);
   background-repeat: no-repeat;
   background-size: cover;
+	background-position: center;
   height: 800px;
   display: flex;
   align-items: flex-end;
@@ -245,3 +257,78 @@ button.button {
 	color: #FFFFFF;
 	margin-bottom: 20px;
 }
+
+
+/*** Footer ***/
+
+/* Footer Styles */
+.footer {
+	width: 1140px;
+	margin-inline: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Footer Left Contents */
+.footer > .left_contents {
+	max-width: 500px;
+}
+
+/* Footer Left Contents Title */
+.footer > .left_contents > .title {
+	color: #F8F8F8;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 53px;
+	margin-bottom: 20px;
+}
+
+/* Footer Left Contents Description */
+.footer > .left_contents > .description {
+	margin-bottom: 25px;
+}
+
+/* Footer Left Contents Email */
+.footer > .left_contents > .email {
+	margin-bottom: 15px;
+}
+
+/* Footer Left Contents Phone */
+.footer > .left_contents > .phone {
+	margin-bottom: 30px;
+}
+
+/* Footer Left Contents Social */
+.footer > .left_contents > .social {
+	display: flex;
+	gap: 15px;
+}
+
+/* Footer Right Contents */
+.footer > .right_contents {
+	max-width: 325px;
+}
+
+/* Footer Right Contents Title */
+.footer > .right_contents > .title {
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+
+/* Footer Right Contents Email */
+.footer > .right_contents > .subcription_email {
+	background-color: #151414;
+	width: 100%;
+	height: 65px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F3F3F3;
+	padding: 20px;
+	border: 1px solid #FFFFFF;
+	border-radius: 8px;
+	outline: none;
+	margin-bottom: 15px;
+}
+	
