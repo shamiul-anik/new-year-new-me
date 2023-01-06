@@ -1,0 +1,247 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+/*** Global Style ***/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #444343;
+}
+
+main {
+	max-width: 1140px;
+	margin-inline: auto;
+}
+
+
+/*** Common Design ***/
+
+/* Contact Us Button */
+button.button {
+	width: 160px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 23px;
+  border-radius: 5px;
+	border: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Primary Button */
+.btn_primary {
+	background-color: #F15B22;
+	color: #FFFFFF;
+	height: 65px;
+  padding: 20px 25px;
+}
+
+/* Primary Button Hover */
+.btn_primary:hover {
+  background-color: #e64c0f;
+}
+
+/* Primary Button */
+.btn_secondary {
+	background-color: #FFFFFF;
+	color: #F15B22;
+	height: 55px;
+  padding: 15px 25px;
+}
+
+/* Primary Button Hover */
+.btn_secondary:hover {
+  background-color: #F5F5F5;
+}
+
+
+/*** Banner Styles ***/
+/* Banner Image Section */
+.banner_image {
+  background-image: url(../images/banner/banner1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Banner Contents */
+.banner_contents {
+  text-align: right;
+  width: 525px;
+  margin-right: 80px;
+  margin-bottom: 100px;
+}
+
+/* Banner Title */
+.banner_contents > .banner_title {
+  font-size: 65px;
+  font-weight: 700;
+  color: #151414;
+	line-height: 76px;
+	margin-bottom: 25px;
+}
+
+/* Banner Description */
+.banner_contents > .banner_description {
+  font-weight: 400;
+  font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+
+/*** My Failures ***/
+
+/* My Failures Section */
+.my_failures_section {
+	margin: 130px 0; 
+}
+
+/* My Failures Contents */
+.my_failure_contents {
+	display: flex;
+	align-items: flex-end;
+	gap: 85px;
+}
+
+/* My Failures Image */
+.my_failure_contents > .my_failure_image > img {
+	height: 720px;
+	width: 570px;
+}
+
+/* My Failures Group */
+.my_failure_group {
+	width: 410px;
+	margin-bottom: 80px;
+}
+
+/* My Failures Title */
+.my_failure_group > .my_failure_title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 47px;
+	color: #151414;
+	margin-bottom: 25px;
+}
+
+/* My Failures Description */
+.my_failure_group > .my_failure_description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 15px;
+	text-align: justify;
+}
+
+/* My Failures Reasons */
+.my_failure_group > .failure_reasons_group >.failure_reasons {
+	display: flex;
+	gap: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	margin-bottom: 10px; 
+}
+
+
+/*** My Plan ***/
+
+/* My Plan */
+.my_plan_section {
+  text-align: center;
+	margin-bottom: 130px;
+}
+
+/* My Plan Title */
+.my_plan_section > .title {
+  font-size: 40px;
+	font-weight: 700;
+	line-height: 47px;
+	color: #151414;
+	margin-bottom: 55px;
+}
+
+/* My Plan Group */
+.my_plan_group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* My Plan */
+.my_plan_group > .my_plan {
+  background-color: #F5F5F5;
+	width: 270px;
+	padding: 50px 20px;
+}
+
+/* Plan Image */
+.my_plan_group > .my_plan > .plan_image {
+	margin-bottom: 10px;
+}
+
+/* Plan Title */
+.my_plan_group > .my_plan > .plan_title {
+	color: #151414;
+	font-size: 25px;
+  font-weight: 700;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+/* Plan Description */
+.my_plan_group > .my_plan > .plan_description {
+	color: #737272;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 29px;
+	text-align: center;
+}
+
+
+/*** Positive Mindset ***/
+
+/* Positive Mindset Section */
+.positive_mindset_section {
+	/* background-image: url(../images/watch.png), url(../images/gradient3.png);
+	background-blend-mode: overlay; */
+	background-image: url(../images/watch.png);
+	background-repeat: no-repeat;
+  background-size: cover;
+	border-radius: 8px;
+	margin-bottom: 130px;
+}
+
+/* Positive Mindset */
+.positive_mindset_section > .positive_mindset {
+	background: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%);
+	border-radius: 8px;
+	height: 300px;
+	display: flex;
+  align-items: center;
+	height: 300px;
+}
+
+/* Positive Mindset Contents */
+.positive_mindset > .positive_mindset_contents {
+	margin-left: 65px;
+}
+
+/* Positive Mindset Title */
+.positive_mindset_contents > .positive_mindset_title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 47px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
