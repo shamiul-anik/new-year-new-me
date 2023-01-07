@@ -57,7 +57,7 @@ button.button {
   background-color: #e64c0f;
 }
 
-/* Primary Button */
+/* Secondary Button */
 .btn_secondary {
 	background-color: #FFFFFF;
 	color: #F15B22;
@@ -65,7 +65,7 @@ button.button {
   padding: 15px 25px;
 }
 
-/* Primary Button Hover */
+/* Secondary Button Hover */
 .btn_secondary:hover {
   background-color: #F5F5F5;
 }
@@ -110,34 +110,58 @@ button.button {
 }
 
 
-/*** My Failures ***/
+/*** My Status (Success/Failures) ***/
 
-/* My Failures Section */
-.my_failures_section {
-	margin: 130px 0; 
+/* My Status (Success/Failures) Section */
+.my_status_section {
+	margin-top: 130px; 
 }
 
-/* My Failures Contents */
-.my_failure_contents {
+/* My Status (Success/Failures) Contents */
+.my_status_contents {
 	display: flex;
 	align-items: flex-end;
-	gap: 85px;
+	justify-content: space-between;
 }
 
-/* My Failures Image */
-.my_failure_contents > .my_failure_image > img {
+/* My Status (Success) */
+.my_status_contents > .my_status_image {
+	position: relative;
+}
+
+/* My Status (Success) Shape */
+.my_status_contents > .my_status_image > .rounded_shape {
+	background-color: #f7f7f7;
+	position: absolute;
+	bottom: 0;
+	height: 570px;
+	width: 570px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+/* My Status (Success) Image */
+.my_status_contents > .my_status_image > img.success_image {
+	height: auto;
+	width: 570px;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+/* My Status (Failures) Image */
+.my_status_contents > .my_status_image > img.failure_image {
 	height: 720px;
 	width: 570px;
 }
 
-/* My Failures Group */
-.my_failure_group {
+/* My Status (Success/Failures) Group */
+.my_status_group {
 	width: 410px;
 	margin-bottom: 80px;
 }
 
-/* My Failures Title */
-.my_failure_group > .my_failure_title {
+/* My Status (Success/Failures) Title */
+.my_status_group > .my_status_title {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 47px;
@@ -145,8 +169,8 @@ button.button {
 	margin-bottom: 25px;
 }
 
-/* My Failures Description */
-.my_failure_group > .my_failure_description {
+/* My Status (Success/Failures) Description */
+.my_status_group > .my_status_description {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
@@ -154,8 +178,8 @@ button.button {
 	text-align: justify;
 }
 
-/* My Failures Reasons */
-.my_failure_group > .failure_reasons_group >.failure_reasons {
+/* My Status (Success/Failures) Reasons */
+.my_status_group > .status_reasons_group >.status_reasons {
 	display: flex;
 	gap: 10px;
 	font-weight: 400;
@@ -170,7 +194,7 @@ button.button {
 /* My Plan */
 .my_plan_section {
   text-align: center;
-	margin-bottom: 130px;
+	margin: 130px 0;
 }
 
 /* My Plan Title */
@@ -317,7 +341,7 @@ button.button {
 	margin-bottom: 30px;
 }
 
-/* Footer Right Contents Email */
+/* Footer Right Contents Subcription */
 .footer > .right_contents > .subcription_email {
 	background-color: #151414;
 	width: 100%;
