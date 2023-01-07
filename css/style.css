@@ -1,5 +1,5 @@
 /* Import Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
 /*** Global Style ***/
 * {
@@ -124,7 +124,7 @@ button.button {
 	justify-content: space-between;
 }
 
-/* My Status (Success) */
+/* My Status (Success) DIV */
 .my_status_contents > .my_status_image {
 	position: relative;
 }
@@ -249,20 +249,16 @@ button.button {
 
 /* Positive Mindset Section */
 .positive_mindset_section {
-	/* background-image: url(../images/watch.png), url(../images/gradient3.png);
-	background-blend-mode: overlay; */
-	background-image: url(../images/watch.png);
+	background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url(../images/watch.png);
 	background-repeat: no-repeat;
   background-size: cover;
 	border-radius: 8px;
 	margin-bottom: 130px;
+	height: 300px;
 }
 
-/* Positive Mindset */
+/* Positive Mindset DIV */
 .positive_mindset_section > .positive_mindset {
-	background: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%);
-	border-radius: 8px;
-	height: 300px;
 	display: flex;
   align-items: center;
 	height: 300px;
@@ -310,6 +306,7 @@ button.button {
 /* Footer Left Contents Description */
 .footer > .left_contents > .description {
 	margin-bottom: 25px;
+	text-align: justify;
 }
 
 /* Footer Left Contents Email */
